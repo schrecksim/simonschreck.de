@@ -1,35 +1,36 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import "./styles/App.css";
+import { useIntlayer } from "react-intlayer";
+import { useI18nHTMLAttributes } from "./hooks/useI18nHTMLAttributes";
+import { LocaleRouter } from "./components/LocaleRouter";
+import Header from "./components/Header.tsx";
 
-function App() {
-  const [count, setCount] = useState(0)
+function AppContent() {
+  useI18nHTMLAttributes();
+  const content = useIntlayer("app");
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+        <Header />
+        <h1 style={{fontSize: "0em"}}>{content.h1}</h1>
+
+        <h2>{content.h_support}</h2>
+
+        <h2>{content.h_about_me}</h2>
+
+        <h2>{content.h_availability}</h2>
+
+        <h2>{content.h_contact}</h2>
+
     </>
-  )
+  );
 }
 
-export default App
+function App() {
+  return (
+    <LocaleRouter>
+      <AppContent />
+    </LocaleRouter>
+  );
+}
+
+export default App;
