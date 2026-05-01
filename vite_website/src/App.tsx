@@ -7,6 +7,7 @@ import Contact from "./components/contact/Contact.tsx";
 import BusinessAreas from "./components/business_areas/BusinessAreas.tsx";
 import AboutMe from "./components/about_me/AboutMe.tsx";
 import Availability from "./components/availability/Availability.tsx";
+import Footer from "./components/footer/Footer.tsx";
 
 function AppContent() {
   useI18nHTMLAttributes();
@@ -24,6 +25,8 @@ function AppContent() {
         <Availability />
 
         <Contact />
+
+        <Footer />
     </>
   );
 }
