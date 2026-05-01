@@ -1,20 +1,14 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import { LocaleSwitcher } from "./LocaleSwitcher";
+import "../styles/Header.css"
 
 const Header = () => {
     return (
-        <header>
-            <nav>
-                {/* Navigation links go here */}
-                <Link to="/">Home</Link>
-                <Link to="/about">About Me</Link>
-                <Link to="/glossary">Glossary</Link>
-                <Link to="/datenschutzerklaerung">Datenschutzerklärung</Link>
-                <Link to="/impressum">Impressum</Link>
-            </nav>
-            {/* Logo goes here */}
+        <header className="header">
+            <p>Simon Schreck</p>
+            <p>Data & Business Consultant</p>
+            <LocaleSwitcher />
         </header>
-    );
-};
+    )
+}
 
-export default Header;
+export default Header

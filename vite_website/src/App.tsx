@@ -1,40 +1,36 @@
-import { StrictMode } from 'react';
-import { createRoot } from 'react-dom/client';
-import './index.css';
-import Header from './components/Header';
-import Footer from './components/Footer';
+import "./styles/App.css";
+import { useIntlayer } from "react-intlayer";
+import { useI18nHTMLAttributes } from "./hooks/useI18nHTMLAttributes";
+import { LocaleRouter } from "./components/LocaleRouter";
+import Header from "./components/Header.tsx";
 
-// Add other page components here
+function AppContent() {
+  useI18nHTMLAttributes();
+  const content = useIntlayer("app");
 
-const App = () => {
-    return (
-        <StrictMode>
-            <>
-                <Header />
-                {/* Render your routes based on the URL */}
-                <main>
-                    <Router>
-                        <div>
-                            <header> <Header /> </header>
-                            {/* Render your routes based on the URL */}
-                            <Routes>
-                                <Route path="/" element={<LandingPage />} /> {/* Root route */}
+  return (
+    <>
+        <Header />
+        <h1 style={{fontSize: "0em"}}>{content.h1}</h1>
 
-                                {/* Add more routes for each of your pages */}
-                                <Route path="/about" element={<AboutMe />} />
-                                <Route path="/glossary" element={<GlossaryPage />} />
-                                <Route path="/datenschutzerklaerung" element={<DatenschutzErklärung />} />
-                                <Route path="/impressum" element={<Impressum />} />
+        <h2>{content.h_support}</h2>
 
-                            </Routes>
-                            <footer> <Footer /> </footer>
-                        </div>
-                    </Router>
-                </main>
-                <Footer />
-            </>
-        </StrictMode>
-    );
-};
+        <h2>{content.h_about_me}</h2>
+
+        <h2>{content.h_availability}</h2>
+
+        <h2>{content.h_contact}</h2>
+
+    </>
+  );
+}
+
+function App() {
+  return (
+    <LocaleRouter>
+      <AppContent />
+    </LocaleRouter>
+  );
+}
 
 export default App;

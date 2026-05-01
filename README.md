@@ -10,5 +10,3 @@ vite_website    | Actual project for the website, build with Vite.
 2. Installing the project dependencies: pnpm install
 3. To start the local development server: pnpm vite
 4. To stop the local development server: q + enter
-
-pnpm add react-i18next i18next
