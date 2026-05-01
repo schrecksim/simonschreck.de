@@ -3,6 +3,10 @@ import { useIntlayer } from "react-intlayer";
 import { useI18nHTMLAttributes } from "./hooks/useI18nHTMLAttributes";
 import { LocaleRouter } from "./components/LocaleRouter";
 import Header from "./components/Header.tsx";
+import Contact from "./components/contact/Contact.tsx";
+import BusinessAreas from "./components/business_areas/BusinessAreas.tsx";
+import AboutMe from "./components/about_me/AboutMe.tsx";
+import Availability from "./components/availability/Availability.tsx";
 
 function AppContent() {
   useI18nHTMLAttributes();
@@ -13,14 +17,13 @@ function AppContent() {
         <Header />
         <h1 style={{fontSize: "0em"}}>{content.h1}</h1>
 
-        <h2>{content.h_support}</h2>
+        <BusinessAreas />
 
-        <h2>{content.h_about_me}</h2>
+        <AboutMe />
 
-        <h2>{content.h_availability}</h2>
+        <Availability />
 
-        <h2>{content.h_contact}</h2>
-
+        <Contact />
     </>
   );
 }
