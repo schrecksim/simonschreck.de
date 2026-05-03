@@ -1,5 +1,5 @@
-import { LocaleSwitcher } from "./LocaleSwitcher";
-import "../styles/Header.css"
+import { LocaleSwitcher } from "../LocaleSwitcher.tsx";
+import "../../styles/Header.css"
 
 const Header = () => {
     return (

@@ -20,6 +20,7 @@
     "vite-intlayer": "latest"
   },
   "devDependencies": {
+    "@react-router/fs-routes": "^7.14.2",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "@typescript-eslint/eslint-plugin": "^8.57.2",

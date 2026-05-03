@@ -2,10 +2,10 @@ import "./styles/App.css";
 import { useIntlayer } from "react-intlayer";
 import { useI18nHTMLAttributes } from "./hooks/useI18nHTMLAttributes";
 import { LocaleRouter } from "./components/LocaleRouter";
-import Header from "./components/Header.tsx";
+import Header from "./components/header/Header.tsx";
 import Contact from "./components/contact/Contact.tsx";
 import BusinessAreas from "./components/business_areas/BusinessAreas.tsx";
-import AboutMe from "./components/about_me/AboutMe.tsx";
+import AboutMeCard from "./components/about_me/AboutMeCard.tsx";
 import Availability from "./components/availability/Availability.tsx";
 import Footer from "./components/footer/Footer.tsx";
 
@@ -20,7 +20,7 @@ function AppContent() {
 
         <BusinessAreas />
 
-        <AboutMe />
+        <AboutMeCard />
 
         <Availability />
 
