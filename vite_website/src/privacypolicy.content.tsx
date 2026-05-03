@@ -8,7 +8,7 @@ const legalnoteContent = {
     h1: t({
       en: "Privacy Policy",
       de: "Datenschutzerklärung",
-      ja: "ホーム",
+      ja: "プライバシーポリシー",
     }),
   },
 } satisfies Dictionary;

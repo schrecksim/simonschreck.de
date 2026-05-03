@@ -6,8 +6,8 @@ const headerContent = {
 
   content: {
     l_home: t({
-      en: "return to home page",
-      de: "zurück zur Startseite",
+      en: "to home page",
+      de: "zur Startseite",
       ja: "トップページに戻る",
     }),
   },
