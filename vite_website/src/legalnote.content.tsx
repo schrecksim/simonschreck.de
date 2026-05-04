@@ -10,14 +10,6 @@ const legalnoteContent = {
       de: "Impressum",
       ja: "サイト運営者情報",
     }),
-    name: "Simon Schreck",
-    street: "Im Asemwald 32",
-    area: "70599 Stuttgart",
-    country: t({
-      en: "Germany",
-      de: "Deutschland",
-      ja: "ドイツ",
-    }),
     h_bin: t({
       en: "Business Identification Number",
       de: "Wirtschaftsidentifikationsnummer",

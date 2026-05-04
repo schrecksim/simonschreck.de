@@ -31,6 +31,14 @@ const contactContent = {
       de: "Nehmen Sie über einen der folgenden Wege Kontakt auf:",
       ja: "以下のいずれかの方法でご連絡ください:",
     }),
+    name: "Simon Schreck",
+    street: "Im Asemwald 32",
+    area: "70599 Stuttgart",
+    country: t({
+      en: "Germany",
+      de: "Deutschland",
+      ja: "ドイツ",
+    }),
   },
 } satisfies Dictionary;
 

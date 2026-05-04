@@ -3,7 +3,8 @@ import { useIntlayer } from "react-intlayer";
 import { useI18nHTMLAttributes } from "./hooks/useI18nHTMLAttributes";
 import HeaderSubpage from "./components/header/HeaderSubpage.tsx";
 import Footer from "./components/footer/Footer.tsx";
-import Contact from "./components/contact/Contact.tsx";
+import ResponsibleInstance from "./components/contact/ResponsibleInstance.tsx";
+import ElectronicContact from "./components/contact/ElectronicContact.tsx";
 
 function LegalNoteContent() {
     useI18nHTMLAttributes();
@@ -14,12 +15,9 @@ function LegalNoteContent() {
             <HeaderSubpage />
             <h1>{content.h1}</h1>
 
-            <p>{content.name}</p>
-            <p>{content.address}</p>
-            <p>{content.area}</p>
-            <p>{content.country}</p>
+            <ResponsibleInstance />
 
-            <Contact />
+            <ElectronicContact />
 
             <h2>{content.h_bin}</h2>
             <p>{content.bin_num}</p>
