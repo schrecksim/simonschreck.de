@@ -1,4 +1,3 @@
-import "./styles/App.css";
 import { useIntlayer } from "react-intlayer";
 import { useI18nHTMLAttributes } from "./hooks/useI18nHTMLAttributes";
 import { LocaleRouter } from "./components/LocaleRouter";
@@ -16,16 +15,15 @@ function AppContent() {
   return (
     <>
         <Header />
-        <h1 style={{fontSize: "0em"}}>{content.h1}</h1>
+        <main>
+            <h1 style={{fontSize: "0em"}}>{content.h1}</h1>
+            <BusinessAreas />
 
-        <BusinessAreas />
+            <AboutMeCard />
+            <Availability />
 
-        <AboutMeCard />
-
-        <Availability />
-
-        <Contact />
-
+            <Contact />
+        </main>
         <Footer />
     </>
   );
@@ -33,9 +31,9 @@ function AppContent() {
 
 function App() {
   return (
-    <LocaleRouter>
-      <AppContent />
-    </LocaleRouter>
+      <LocaleRouter>
+          <AppContent />
+      </LocaleRouter>
   );
 }
 

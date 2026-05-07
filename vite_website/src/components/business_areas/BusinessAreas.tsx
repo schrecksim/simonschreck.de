@@ -1,5 +1,5 @@
 import { useIntlayer } from "react-intlayer";
-import Glossary from "../glossary/Glossary.tsx";
+import GlossaryLanding from "../glossary/GlossaryLanding.tsx";
 
 const BusinessAreas = () => {
     const content = useIntlayer("business_areas");
@@ -9,7 +9,7 @@ const BusinessAreas = () => {
         <div>
             <h2>{content.h_support}</h2>
             {/* Pass the category prop correctly here */}
-            <Glossary category={category} />
+            <GlossaryLanding category={category} />
         </div>
     );
 };

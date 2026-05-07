@@ -1,13 +1,89 @@
+/* index.css */
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --text-color: #1d1b19;
+  --background-color: white;
+  --header-footer-bg: #1d1b19;
+  --header-footer-color: white;
+  --heading-color: #332F2D;
+}
 
-  color: #1d1b19;
-  background-color: #ffffff;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  color: var(--text-color);
+  background-color: var(--background-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+main {
+  flex: 1 0 auto; /* Takes remaining space after header */
+  padding-bottom: 6rem; /* Space for fixed footer */
+  width: 85%;
+  margin: auto;
+}
 
-  min-width: 300px;
+header {
+  position: sticky;
+  top: 0;
+  width: 100%; /* Header nimmt volle Breite ein */
+  background-color: var(--header-footer-bg);
+  color: var(--header-footer-color);
+  z-index: 100;
+  border-bottom-right-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+}
+
+.header-content {
+  width: 85%; /* Gleich wie main */
+  justify-content: space-evenly;
+  margin: 0 auto; /* Zentriert den Container */
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 1rem; /* Optional: Horizontaler Abstand */
+}
+
+header a,
+footer a {
+  color: var(--header-footer-color);
+}
+
+h1, h2, h3 {
+  color: var(--heading-color);
+}
+
+p {
+  text-align: justify;
+}
+
+button {
+  padding: 0.5rem 1rem;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0; /* Changed from margin to ensure full width */
+  background-color: var(--header-footer-bg);
+  color: var(--header-footer-color);
+  padding: 1rem 2rem;
+  transform: translateY(calc(100vh - var(--footer-height)));
+  border-top-right-radius: 1.5rem;
+  border-top-left-radius: 1.5rem;
+}
+
+@supports (-webkit-overflow-scrolling: touch) {
+  :root {
+    --footer-height: calc(var(--header-footer-bg) + 2rem); /* Adjust as needed */
+  }
 }
