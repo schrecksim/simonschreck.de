@@ -1,25 +1,30 @@
-import { localeMap } from "intlayer"; // Utility functions and types from 'intlayer'
-import type { FC, PropsWithChildren } from "react"; // React types for functional components and props
-import { IntlayerProvider } from "react-intlayer"; // Provider for internationalization context
-import { BrowserRouter, Route, Routes } from "react-router-dom"; // Router components for managing navigation
+import { localeMap } from "intlayer";
+import type { FC, PropsWithChildren } from "react";
+import { IntlayerProvider } from "react-intlayer";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import LegalNote from "../LegalNote.tsx";
+import PrivacyPolicy from "../PrivacyPolicy.tsx";
 
-/**
- * A router component that sets up locale-specific routes.
- * It uses React Router to manage navigation and render localized components.
- */
 export const LocaleRouter: FC<PropsWithChildren> = ({ children }) => (
-  <BrowserRouter>
-    <Routes>
-      {localeMap(({ locale, urlPrefix }) => (
-        <Route
-          // Route pattern to capture the locale (e.g., /en/, /fr/) and match all subsequent paths
-          path={`${urlPrefix}/*`}
-          key={locale}
-          element={
-            <IntlayerProvider locale={locale}>{children}</IntlayerProvider>
-          } // Wraps children with locale management and markdown rendering
-        />
-      ))}
-    </Routes>
-  </BrowserRouter>
+    <BrowserRouter>
+        <Routes>
+            {localeMap(({ locale, urlPrefix }) => (
+                <Route
+                    path={`${urlPrefix}/*`}
+                    key={locale}
+                    element={
+                        <IntlayerProvider locale={locale}>
+                            <Routes>
+                                {/* Hauptseite */}
+                                <Route path="/" element={children} />
+                                {/* Unterseiten */}
+                                <Route path="legalnote" element={<LegalNote />} />
+                                <Route path="privacypolicy" element={<PrivacyPolicy />} />
+                            </Routes>
+                        </IntlayerProvider>
+                    }
+                />
+            ))}
+        </Routes>
+    </BrowserRouter>
 );

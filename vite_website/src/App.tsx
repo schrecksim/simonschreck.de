@@ -1,8 +1,12 @@
-import "./styles/App.css";
 import { useIntlayer } from "react-intlayer";
 import { useI18nHTMLAttributes } from "./hooks/useI18nHTMLAttributes";
 import { LocaleRouter } from "./components/LocaleRouter";
-import Header from "./components/Header.tsx";
+import Header from "./components/header/Header.tsx";
+import Contact from "./components/contact/Contact.tsx";
+import BusinessAreas from "./components/business_areas/BusinessAreas.tsx";
+import AboutMeCard from "./components/about_me/AboutMeCard.tsx";
+import Availability from "./components/availability/Availability.tsx";
+import Footer from "./components/footer/Footer.tsx";
 
 function AppContent() {
   useI18nHTMLAttributes();
@@ -11,25 +15,25 @@ function AppContent() {
   return (
     <>
         <Header />
-        <h1 style={{fontSize: "0em"}}>{content.h1}</h1>
+        <main>
+            <h1 style={{fontSize: "0em"}}>{content.h1}</h1>
+            <BusinessAreas />
 
-        <h2>{content.h_support}</h2>
+            <AboutMeCard />
+            <Availability />
 
-        <h2>{content.h_about_me}</h2>
-
-        <h2>{content.h_availability}</h2>
-
-        <h2>{content.h_contact}</h2>
-
+            <Contact />
+        </main>
+        <Footer />
     </>
   );
 }
 
 function App() {
   return (
-    <LocaleRouter>
-      <AppContent />
-    </LocaleRouter>
+      <LocaleRouter>
+          <AppContent />
+      </LocaleRouter>
   );
 }
 

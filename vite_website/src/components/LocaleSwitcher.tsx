@@ -9,14 +9,8 @@ export const LocaleSwitcher: FC = () => {
 
   const { setLocale, locale, availableLocales } = useLocale({
     onLocaleChange: (locale) => {
-      // Construct the URL with the updated locale
-      // Example: /es/about
       const pathWithLocale = getLocalizedUrl(`${pathname}${search}`, locale);
-
-      console.log({ pathWithLocale });
-
-      // Update the URL path
-      navigate(pathWithLocale);
+      navigate(pathWithLocale, { replace: true }); // Ersetzt die aktuelle URL, statt sie anzuhängen
     },
   });
 
