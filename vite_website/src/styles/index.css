@@ -22,7 +22,7 @@ body {
 
 main {
   flex: 1 0 auto; /* Takes remaining space after header */
-  padding-bottom: 6rem; /* Space for fixed footer */
+  padding-bottom: 10rem;  /* Space for fixed footer */
   width: 85%;
   margin: auto;
 }
