@@ -36,16 +36,17 @@ header {
   z-index: 100;
   border-bottom-right-radius: 1.5rem;
   border-bottom-left-radius: 1.5rem;
+  padding-bottom: 0.2rem;
 }
 
 .header-content {
-  width: 85%; /* Gleich wie main */
-  justify-content: space-evenly;
-  margin: 0 auto; /* Zentriert den Container */
+  width: 85%;
+  justify-content: space-around; /* Changed from space-evenly */
+  margin: auto;
   display: flex;
   align-items: center;
   gap: 1rem;
-  padding: 0 1rem; /* Optional: Horizontaler Abstand */
+  text-align: center;
 }
 
 header a,
@@ -73,7 +74,7 @@ footer {
   position: fixed;
   bottom: 0;
   left: 0;
-  right: 0; /* Changed from margin to ensure full width */
+  right: 0;
   background-color: var(--header-footer-bg);
   color: var(--header-footer-color);
   padding: 1rem 2rem;
@@ -84,6 +85,6 @@ footer {
 
 @supports (-webkit-overflow-scrolling: touch) {
   :root {
-    --footer-height: calc(var(--header-footer-bg) + 2rem); /* Adjust as needed */
+    --footer-height: calc(var(--header-footer-bg) + 2rem);
   }
 }

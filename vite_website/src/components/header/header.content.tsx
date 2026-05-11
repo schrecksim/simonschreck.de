@@ -10,6 +10,7 @@ const headerContent = {
       de: "zur Startseite",
       ja: "トップページに戻る",
     }),
+    slogan: "Data & Business Consultant"
   },
 } satisfies Dictionary;
 

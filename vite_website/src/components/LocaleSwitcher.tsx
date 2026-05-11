@@ -19,6 +19,9 @@ export const LocaleSwitcher: FC = () => {
       style={{
         display: "flex",
         gap: "1rem",
+        justifyContent: "center",
+        alignItems: "center",
+        padding: "0.5rem"
       }}
     >
       {availableLocales.map((localeItem) => (
