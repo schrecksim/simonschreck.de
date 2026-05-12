@@ -22,8 +22,8 @@ body {
 
 main {
   flex: 1 0 auto; /* Takes remaining space after header */
-  padding-bottom: 10rem;  /* Space for fixed footer */
-  width: 85%;
+  padding-bottom: 1rem;  /* Space for fixed footer */
+  width: 90%;
   margin: auto;
 }
 
@@ -40,11 +40,11 @@ header {
 }
 
 .header-content {
-  width: 85%;
+  width: 90%;
   justify-content: space-around; /* Changed from space-evenly */
   margin: auto;
-  display: flex;
   align-items: center;
+  justify-items: center;
   gap: 1rem;
   text-align: center;
 }
@@ -71,13 +71,12 @@ ul li {
 }
 
 footer {
-  position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
   background-color: var(--header-footer-bg);
   color: var(--header-footer-color);
-  padding: 1rem 2rem;
+  padding: 0.25rem;
   transform: translateY(calc(100vh - var(--footer-height)));
   border-top-right-radius: 1.5rem;
   border-top-left-radius: 1.5rem;
