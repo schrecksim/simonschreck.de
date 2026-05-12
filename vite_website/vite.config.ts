@@ -10,4 +10,7 @@ export default defineConfig({
     emitFile: true,
     filename: "stats.html",
   }), tailwindcss()],
+  preview: {
+    allowedHosts: ["0.0.0.0", "localhost", "127.0.0.1", "l6j8d401tdqnr1y80i62nepe.95.216.220.168.sslip.io",".simonschreck.de"],
+  }
 });
