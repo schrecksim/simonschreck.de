@@ -2,8 +2,9 @@ import { localeMap } from "intlayer";
 import type { FC, PropsWithChildren } from "react";
 import { IntlayerProvider } from "react-intlayer";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import LegalNote from "../LegalNote.tsx";
-import PrivacyPolicy from "../PrivacyPolicy.tsx";
+import LegalNote from "../pages/LegalNote.tsx";
+import PrivacyPolicy from "../pages/PrivacyPolicy.tsx";
+import Glossary from "../pages/Glossary.tsx";
 
 export const LocaleRouter: FC<PropsWithChildren> = ({ children }) => (
     <BrowserRouter>
@@ -20,6 +21,7 @@ export const LocaleRouter: FC<PropsWithChildren> = ({ children }) => (
                                 {/* Unterseiten */}
                                 <Route path="legalnote" element={<LegalNote />} />
                                 <Route path="privacypolicy" element={<PrivacyPolicy />} />
+                                <Route path="glossary" element={<Glossary />} />
                             </Routes>
                         </IntlayerProvider>
                     }

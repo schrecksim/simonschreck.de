@@ -1,7 +1,7 @@
 import { useIntlayer } from "react-intlayer";
 import GlossaryEntry from './GlossaryEntry.tsx';
 
-const Glossary: React.FC<{ category?: string }> = ({ category }) => {
+const GlossaryBuilder: React.FC<{ category?: string }> = ({ category }) => {
     const content = useIntlayer("glossary");
 
     const glossaries: { [key: string]: GlossaryEntryProps[] } = {
@@ -28,4 +28,4 @@ const Glossary: React.FC<{ category?: string }> = ({ category }) => {
     );
 };
 
-export default Glossary;
+export default GlossaryBuilder;

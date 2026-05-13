@@ -10,6 +10,11 @@ const appContent = {
       de: "Startseite",
       ja: "ホーム",
     }),
+    glossary_link: t({
+      en: "Click here to find out more",
+      de: "Hier klicken und mehr entdecken",
+      ja: "ここをクリックして、さらに詳しく見る",
+    })
   },
 } satisfies Dictionary;
 
