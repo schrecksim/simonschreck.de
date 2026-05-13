@@ -2,7 +2,7 @@ import { t, type Dictionary } from "intlayer";
 //import { type ReactNode } from "react";
 
 const aboutmeContent = {
-  key: "about_me_card",
+  key: "about_me",
 
   content: {
     h_about_me: t({

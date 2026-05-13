@@ -4,7 +4,7 @@ import { useState } from 'react';
 import '../../styles/AboutMeCard.css';
 
 export default function AboutMeCard() {
-    const content = useIntlayer("about_me_card");
+    const content = useIntlayer("about_me");
     const [isFlipped, setIsFlipped] = useState(false);
 
     const handleClick = () => {
