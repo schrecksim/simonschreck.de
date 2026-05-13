@@ -1,9 +1,9 @@
 import { useIntlayer } from "react-intlayer";
-import { useI18nHTMLAttributes } from "./hooks/useI18nHTMLAttributes";
-import HeaderSubpage from "./components/header/HeaderSubpage.tsx";
-import Footer from "./components/footer/Footer.tsx";
-import ResponsibleInstance from "./components/contact/ResponsibleInstance.tsx";
-import ElectronicContact from "./components/contact/ElectronicContact.tsx";
+import { useI18nHTMLAttributes } from "../hooks/useI18nHTMLAttributes";
+import HeaderSubpage from "../components/header/HeaderSubpage.tsx";
+import Footer from "../components/footer/Footer.tsx";
+import ResponsibleInstance from "../components/contact/ResponsibleInstance.tsx";
+import ElectronicContact from "../components/contact/ElectronicContact.tsx";
 
 function LegalNoteContent() {
     useI18nHTMLAttributes();

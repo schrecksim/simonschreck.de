@@ -1,9 +1,9 @@
 import {useIntlayer} from "react-intlayer";
-import HeaderSubpage from "./components/header/HeaderSubpage.tsx";
-import Footer from "./components/footer/Footer.tsx";
-import {useI18nHTMLAttributes} from "./hooks/useI18nHTMLAttributes.tsx";
-import ResponsibleInstance from "./components/contact/ResponsibleInstance.tsx";
-import ElectronicContact from "./components/contact/ElectronicContact.tsx";
+import HeaderSubpage from "../components/header/HeaderSubpage.tsx";
+import Footer from "../components/footer/Footer.tsx";
+import {useI18nHTMLAttributes} from "../hooks/useI18nHTMLAttributes.tsx";
+import ResponsibleInstance from "../components/contact/ResponsibleInstance.tsx";
+import ElectronicContact from "../components/contact/ElectronicContact.tsx";
 
 const PrivacyPolicy = () => {
     useI18nHTMLAttributes();

@@ -5,6 +5,18 @@ const glossaryContent = {
     key: "glossary",
 
     content: {
+        h1: t({
+            en: "Glossary",
+            de: "Glossar",
+            ja: "用語集",
+        }),
+        intro: t({
+            en: "Here you will find definitions of terms that I come across in my day-to-day consulting work. Please do not hesitate to contact me if you have any questions on topics not listed here.",
+            de: "Hier finden Sie Definitionen zu Begriffen die mir ein meinem Beratungsalltag begegnen. Zögern Sie nicht mich zu kontaktieren, falls Sie Themen haben, die hier nicht aufgeführt sind.",
+            ja: "ここでは、私が日々のコンサルティング業務でよく目にする用語の定義を掲載しています。ここに記載されていないテーマについてご質問がある場合は、お気軽に連絡ください。",
+        }),
+
+
         t_data_consulting: t({
             en: "Data Consulting",
             de: "Datenberatung",
