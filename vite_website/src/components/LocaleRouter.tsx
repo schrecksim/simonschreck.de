@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import LegalNote from "../pages/LegalNote.tsx";
 import PrivacyPolicy from "../pages/PrivacyPolicy.tsx";
 import Glossary from "../pages/Glossary.tsx";
+import AboutMe from "../pages/AboutMe.tsx";
 
 export const LocaleRouter: FC<PropsWithChildren> = ({ children }) => (
     <BrowserRouter>
@@ -21,6 +22,7 @@ export const LocaleRouter: FC<PropsWithChildren> = ({ children }) => (
                                 {/* Unterseiten */}
                                 <Route path="legalnote" element={<LegalNote />} />
                                 <Route path="privacypolicy" element={<PrivacyPolicy />} />
+                                <Route path="aboutme" element={<AboutMe />} />
                                 <Route path="glossary" element={<Glossary />} />
                             </Routes>
                         </IntlayerProvider>
