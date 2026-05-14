@@ -15,7 +15,7 @@ const contactContent = {
       de: "Tel.: ",
       ja: "電話番号: ",
     }),
-    phone_number: "+4916091011347",
+    phone_number: "+49 15679 662461",
     email: t({
       en: "E-Mail: ",
       de: "E-Mail: ",
