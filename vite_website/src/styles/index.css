@@ -28,7 +28,6 @@ main {
 }
 
 header {
-  position: sticky;
   top: 0;
   width: 100%; /* Header nimmt volle Breite ein */
   background-color: var(--header-footer-bg);
