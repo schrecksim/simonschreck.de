@@ -10,8 +10,8 @@
 }
 
 .card-inner {
-    width: 380px;
-    height: 575px;
+    width: 375px;
+    height: 650px;
     position: relative;
     transform-style: preserve-3d;
     transition: transform 0.6s;
