@@ -4,21 +4,48 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml"
 >
   <url>
-    <loc>http://localhost:5173/</loc>
-    <changefreq>daily</changefreq>
+    <loc>https://simonschreck.de/</loc>
+    <changefreq>monthly</changefreq>
     <priority>1</priority>
-    <xhtml:link rel="alternate" hrefLang="en" href="http://localhost:5173/"/>
-    <xhtml:link rel="alternate" hrefLang="de" href="http://localhost:5173/de"/>
-    <xhtml:link rel="alternate" hrefLang="ja" href="http://localhost:5173/ja"/>
-    <xhtml:link rel="alternate" hrefLang="x-default" href="http://localhost:5173/"/>
+    <xhtml:link rel="alternate" hrefLang="en" href="https://simonschreck.de/"/>
+    <xhtml:link rel="alternate" hrefLang="de" href="https://simonschreck.de/de"/>
+    <xhtml:link rel="alternate" hrefLang="ja" href="https://simonschreck.de/ja"/>
+    <xhtml:link rel="alternate" hrefLang="x-default" href="https://simonschreck.de/"/>
   </url>
   <url>
-    <loc>http://localhost:5173/about</loc>
+    <loc>https://simonschreck.de/aboutme</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hrefLang="en" href="http://localhost:5173/about"/>
-    <xhtml:link rel="alternate" hrefLang="de" href="http://localhost:5173/de/about"/>
-    <xhtml:link rel="alternate" hrefLang="ja" href="http://localhost:5173/ja/about"/>
-    <xhtml:link rel="alternate" hrefLang="x-default" href="http://localhost:5173/about"/>
+    <xhtml:link rel="alternate" hrefLang="en" href="https://simonschreck.de/aboutme"/>
+    <xhtml:link rel="alternate" hrefLang="de" href="https://simonschreck.de/de/aboutme"/>
+    <xhtml:link rel="alternate" hrefLang="ja" href="https://simonschreck.de/ja/aboutme"/>
+    <xhtml:link rel="alternate" hrefLang="x-default" href="https://simonschreck.de/aboutme"/>
+  </url>
+  <url>
+    <loc>https://simonschreck.de/glossary</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hrefLang="en" href="https://simonschreck.de/glossary"/>
+    <xhtml:link rel="alternate" hrefLang="de" href="https://simonschreck.de/de/glossary"/>
+    <xhtml:link rel="alternate" hrefLang="ja" href="https://simonschreck.de/ja/glossary"/>
+    <xhtml:link rel="alternate" hrefLang="x-default" href="https://simonschreck.de/glossary"/>
+  </url>
+  <url>
+    <loc>https://simonschreck.de/legalnote</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hrefLang="en" href="https://simonschreck.de/legalnote"/>
+    <xhtml:link rel="alternate" hrefLang="de" href="https://simonschreck.de/de/legalnote"/>
+    <xhtml:link rel="alternate" hrefLang="ja" href="https://simonschreck.de/ja/legalnote"/>
+    <xhtml:link rel="alternate" hrefLang="x-default" href="https://simonschreck.de/legalnote"/>
+  </url>
+  <url>
+    <loc>https://simonschreck.de/privacypolicy</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hrefLang="en" href="https://simonschreck.de/privacypolicy"/>
+    <xhtml:link rel="alternate" hrefLang="de" href="https://simonschreck.de/de/privacypolicy"/>
+    <xhtml:link rel="alternate" hrefLang="ja" href="https://simonschreck.de/ja/privacypolicy"/>
+    <xhtml:link rel="alternate" hrefLang="x-default" href="https://simonschreck.de/privacypolicy"/>
   </url>
 </urlset>

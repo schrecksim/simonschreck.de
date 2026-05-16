@@ -1,5 +1,19 @@
 User-agent: *
 Allow: /
+Allow: /de
+Allow: /ja
+Allow: /aboutme
+Allow: /de/aboutme
+Allow: /ja/aboutme
+Allow: /glossary
+Allow: /de/glossary
+Allow: /ja/glossary
+Allow: /legalnote
+Allow: /de/legalnote
+Allow: /ja/legalnote
+Allow: /privacypolicy
+Allow: /de/privacypolicy
+Allow: /ja/privacypolicy
 Disallow: /admin
 Disallow: /de/admin
 Disallow: /ja/admin
@@ -7,4 +21,4 @@ Disallow: /private
 Disallow: /de/private
 Disallow: /ja/private
 
-Sitemap: http://localhost:5173/sitemap.xml
+Sitemap: https://simonschreck.de/sitemap.xml

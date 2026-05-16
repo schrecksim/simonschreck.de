@@ -5,14 +5,17 @@ import { generateSitemap, getMultilingualUrls } from "intlayer";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-const SITE_URL = (process.env.SITE_URL || "http://localhost:5173").replace(
+const SITE_URL = (process.env.SITE_URL || "https://simonschreck.de").replace(
     /\/$/,
     ""
 );
 
 const pathList = [
-    { path: "/", changefreq: "daily", priority: 1.0 },
-    { path: "/about", changefreq: "monthly", priority: 0.7 },
+    { path: "/", changefreq: "monthly", priority: 1.0 },
+    { path: "/aboutme", changefreq: "monthly", priority: 0.7 },
+    { path: "/glossary", changefreq: "monthly", priority: 0.7 },
+    { path: "/legalnote", changefreq: "monthly", priority: 0.7 },
+    { path: "/privacypolicy", changefreq: "monthly", priority: 0.7 },
 ];
 
 const sitemapXml = generateSitemap(pathList, { siteUrl: SITE_URL });
@@ -21,11 +24,12 @@ fs.writeFileSync(path.join(__dirname, "public", "sitemap.xml"), sitemapXml);
 const getAllMultilingualUrls = (urls) =>
     urls.flatMap((url) => Object.values(getMultilingualUrls(url)));
 
+const allowedPaths = getAllMultilingualUrls(["/", "/aboutme", "/glossary", "/legalnote", "/privacypolicy"]);
 const disallowedPaths = getAllMultilingualUrls(["/admin", "/private"]);
 
 const robotsTxt = [
     "User-agent: *",
-    "Allow: /",
+    ...allowedPaths.map((path) => `Allow: ${path}`),
     ...disallowedPaths.map((path) => `Disallow: ${path}`),
     "",
     `Sitemap: ${SITE_URL}/sitemap.xml`,
