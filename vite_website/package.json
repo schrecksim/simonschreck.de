@@ -18,7 +18,7 @@
     "react-intlayer": "latest",
     "react-router-dom": "^7.13.2",
     "rollup-plugin-visualizer": "^7.0.1",
-    "vite-intlayer": "latest",
+    "vite-intlayer": "latest"
   },
   "devDependencies": {
     "@react-router/fs-routes": "^7.14.2",
