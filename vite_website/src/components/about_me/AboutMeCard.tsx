@@ -1,8 +1,7 @@
 import { useIntlayer } from "react-intlayer";
-import pic from "../../assets/sitting_dark.jpg";
+import pic from "../../assets/sitting_dark.webp";
 import { useState } from 'react';
 import '../../styles/AboutMeCard.css';
-import {Link} from "../Link.tsx";
 
 export default function AboutMeCard() {
     const content = useIntlayer("about_me");
@@ -20,7 +19,6 @@ export default function AboutMeCard() {
                 className="flip-container"
             >
                 <div className={`card-inner ${isFlipped ? 'flipped' : ''}`}>
-                    {/* Vorderseite (Bild) */}
                     <div className="card-front">
                         <img
                             src={pic}
@@ -29,13 +27,11 @@ export default function AboutMeCard() {
                         />
                     </div>
 
-                    {/* Rückseite (Text) */}
                     <div className="card-back">
                         <div className="card-content">
                             <p>{content.intro}</p>
                             <h3>{content.h_why_me}</h3>
                             <p>{content.reason}</p>
-                            <Link to={"/aboutme"}>{content.about_me_link}</Link>
                         </div>
                     </div>
                 </div>

@@ -1,5 +1,4 @@
 import {t, type Dictionary, enu} from "intlayer";
-//import { type ReactNode } from "react";
 
 const availabilityContent = {
   key: "availability",

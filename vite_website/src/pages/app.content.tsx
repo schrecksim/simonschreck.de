@@ -1,5 +1,4 @@
 import { t, type Dictionary } from "intlayer";
-//import { type ReactNode } from "react";
 
 const appContent = {
   key: "app",
@@ -14,7 +13,12 @@ const appContent = {
       en: "Click here to find out more",
       de: "Hier klicken und mehr entdecken",
       ja: "ここをクリックして、さらに詳しく見る",
-    })
+    }),
+    about_me_link: t({
+      en: "more about me",
+      de: "mehr über mich",
+      ja: "私のことについて",
+    }),
   },
 } satisfies Dictionary;
 

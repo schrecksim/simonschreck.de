@@ -1,5 +1,4 @@
 import {type Dictionary, t} from "intlayer";
-//import { type ReactNode } from "react";
 
 const legalnoteContent = {
     key: "privacypolicy",
