@@ -38,7 +38,7 @@ export const LocaleSwitcher: FC = () => {
           aria-current={locale === localeItem ? "page" : undefined}
         >
           {/* Language in its own Locale - e.g. Français */}
-          {getLocaleName(localeItem, locale)}
+          {getLocaleName(localeItem)}
         </button>
       ))}
     </div>

@@ -7,7 +7,7 @@ declare module 'intlayer' {
     "app": _1U6BM4I90yLovfHVxApc;
   }
 
-  type ConfigLocales = Locales.ENGLISH | Locales.FRENCH | Locales.SPANISH;
+  type ConfigLocales = Locales.ENGLISH | Locales.GERMAN | Locales.JAPANESE;
   type ExtractedLocales = Extract<Locales, ConfigLocales>;
   type ExcludedLocales = Exclude<Locales, ConfigLocales>;
 
