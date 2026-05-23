@@ -3,7 +3,7 @@ import logo from "../../assets/simon_schreck_logo.svg";
 import { useI18nHTMLAttributes } from "../../hooks/useI18nHTMLAttributes.tsx";
 import { useIntlayer } from "react-intlayer";
 
-const HeaderSubpage = () => {
+const HeaderGlossarySubpage = () => {
     useI18nHTMLAttributes();
     const content = useIntlayer("header");
 
@@ -15,10 +15,11 @@ const HeaderSubpage = () => {
                         <img src={logo} alt="logo" style={{ height: "5rem" }} />
                     </Link>
                     <Link to="/">{content.l_home}</Link>
+                    <Link to="/glossary">{content.l_glossary}</Link>
                 </div>
             </div>
         </header>
     );
 };
 
-export default HeaderSubpage;
+export default HeaderGlossarySubpage;

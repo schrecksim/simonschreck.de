@@ -107,6 +107,12 @@ const glossaryContent = {
             de: "Veraltete Systeme oder fehlende Tools behindern die Zusammenarbeit, Skalierung und Innovation.",
             ja: "旧式のシステムやツールの不足が、連携、拡張、そしてイノベーションの妨げとなっている。",
         }),
+
+        h_specific_topics: t({
+            en: "Specific topics: ",
+            de: "Spezifische Themen: ",
+            ja: "具体的なテーマ：",
+        }),
     },
 } satisfies Dictionary;
 

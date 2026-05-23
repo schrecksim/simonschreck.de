@@ -9,6 +9,11 @@ const headerContent = {
       de: "zur Startseite",
       ja: "トップページに戻る",
     }),
+    l_glossary: t({
+      en: "to glossary page",
+      de: "zur Glossarseite",
+      ja: "用語集ページへ",
+    }),
     slogan: "Data & Business Consultant"
   },
 } satisfies Dictionary;
