@@ -19,6 +19,7 @@ function AboutMeContent() {
                 <p>{content.intro}</p>
                 <h3>{content.h_why_me}</h3>
                 <p>{content.reason}</p>
+                {/*TODO: add functionality to expand content*/}
                 <OccupationBuilder />
                 <SchoolBuilder />
                 <CertificationBuilder />

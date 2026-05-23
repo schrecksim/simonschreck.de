@@ -10,12 +10,10 @@ const HeaderSubpage = () => {
     return (
         <header className="header">
             <div className="header-content">
-                <div>
-                    <Link to="/">
-                        <img src={logo} alt="logo" style={{ height: "5rem" }} />
-                    </Link>
-                    <Link to="/">{content.l_home}</Link>
-                </div>
+                <Link to="/">
+                    <img src={logo} alt="logo" style={{ height: "5rem", width: "20rem" }} />
+                </Link>
+                <Link to="/">{content.l_home}</Link>
             </div>
         </header>
     );
