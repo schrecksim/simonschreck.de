@@ -10,13 +10,12 @@ const HeaderGlossarySubpage = () => {
     return (
         <header className="header">
             <div className="header-content">
-                <div>
-                    <Link to="/">
-                        <img src={logo} alt="logo" style={{ height: "5rem" }} />
-                    </Link>
-                    <Link to="/">{content.l_home}</Link>
-                    <Link to="/glossary">{content.l_glossary}</Link>
-                </div>
+                <Link to="/">
+                    <img src={logo} alt="logo" style={{ height: "5rem", width: "20rem" }} />
+                </Link>
+                {/*TODO: links in new line*/}
+                <Link to="/">{content.l_home}</Link>
+                <Link to="/glossary">{content.l_glossary}</Link>
             </div>
         </header>
     );

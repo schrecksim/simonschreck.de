@@ -39,13 +39,13 @@ header {
 }
 
 .header-content {
+  display: flex; /* Nicht inline-flex! */
+  flex-wrap: wrap; /* ⚡ Ermöglicht Zeilenumbruch */
   width: 90%;
-  justify-content: space-around; /* Changed from space-evenly */
   margin: auto;
   align-items: center;
-  justify-items: center;
+  justify-content: center; /* oder flex-start, je nach Wunsch */
   gap: 1rem;
-  text-align: center;
 }
 
 header a,

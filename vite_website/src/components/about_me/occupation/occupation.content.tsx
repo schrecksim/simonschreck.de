@@ -3,6 +3,7 @@ import { t, type Dictionary } from "intlayer";
 const occupationContent = {
   key: "occupations",
 
+  // TODO: add details
   content: {
     h_occupation: t({
       en: "Occupations",
