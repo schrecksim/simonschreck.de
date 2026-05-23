@@ -13,7 +13,6 @@ const HeaderGlossarySubpage = () => {
                 <Link to="/">
                     <img src={logo} alt="logo" style={{ height: "5rem", width: "20rem" }} />
                 </Link>
-                {/*TODO: links in new line*/}
                 <Link to="/">{content.l_home}</Link>
                 <Link to="/glossary">{content.l_glossary}</Link>
             </div>
