@@ -5,6 +5,7 @@ import Footer from "../components/footer/Footer.tsx";
 import SchoolBuilder from "../components/about_me/school/SchoolBuilder.tsx"
 import OccupationBuilder from "../components/about_me/occupation/OccupationBuilder.tsx"
 import CertificationBuilder from "../components/about_me/certification/CertificationBuilder.tsx"
+import ProjectBuilder from "../components/about_me/project/ProjectBuilder.tsx";
 
 function AboutMeContent() {
     useI18nHTMLAttributes();
@@ -20,6 +21,7 @@ function AboutMeContent() {
                 <h3>{content.h_why_me}</h3>
                 <p>{content.reason}</p>
                 {/*TODO: add functionality to expand content*/}
+                <ProjectBuilder />
                 <OccupationBuilder />
                 <SchoolBuilder />
                 <CertificationBuilder />
